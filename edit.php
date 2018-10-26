@@ -10,7 +10,7 @@
     <?php
       $koneksi = mysqli_connect("localhost","root","","php-api");
       $id = $_GET['id'];
-      $qry = mysqli_query($koneksi,"SELECT * FROM siswa WHERE id='$id'");
+      $qry = mysqli_query($koneksi,"SELECT * FROM users WHERE id='$id'");
       $data = mysqli_fetch_array($qry);
       function radio($value, $input) {
         $result = $value==$input?'checked':'';
